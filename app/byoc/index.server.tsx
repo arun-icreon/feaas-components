@@ -19,3 +19,6 @@ import "./ExampleServersideComponent";
 
 // Server with Client inside
 import "./ExampleWrapperComponent";
+
+// Server with Client inside
+import "./TitleDescriptionWithImageAndLinkComponent";
