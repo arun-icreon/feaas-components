@@ -6,7 +6,7 @@ export default async function ExternalComponents({
   searchParams: { feaasSrc: string; data: string };
 }) {
   debugger;
-  console.log("searchParams");
+  console.log("searchParams", searchParams);
   const src = searchParams.feaasSrc;
   const data = searchParams.data ? JSON.parse(searchParams.data) : {};
   return src ? <FEAAS.ServerComponent src={src} data={data} /> : null;
