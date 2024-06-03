@@ -1,6 +1,6 @@
 import React from "react";
 import * as FEAAS from "@sitecore-feaas/clientside/react";
-import style from "../TitleComponent.css";
+import style from "../TitleComponent.module.css";
 interface TitleDescriptionWithImageAndLinkComponentProps {
   imageUrl: string;
   text: string;
@@ -13,25 +13,23 @@ export const TitleDescriptionWithImageAndLinkComponent = (
   props: TitleDescriptionWithImageAndLinkComponentProps
 ): JSX.Element => {
   return (
-    <div className="component promo col-12 link-button">
+    <div className={`component promo col-12 link_button ${style.link_button}`}>
       <div className="component-content">
-        <div>
-          <div style={{ width: "500px" }}>
+        <div className={style.two_col}>
+          <div className={style.left}>
             {props.url ? (
-              <div className={style.field - promolink}>
+              <div className={style.field_Title}>
                 <a href={props.url} title={props.urlText} target="_blank">
-                  <p className="field-Title" title={props.urlText}>
-                    {props.text}
-                  </p>
+                  <span title={props.urlText}>{props.text}</span>
                 </a>
               </div>
             ) : (
-              <p style={{ fontweight: 900, width: "500px" }}>{props.text}</p>
+              <p style={{ fontWeight: 900 }}>{props.text}</p>
             )}
 
-            <p style={{ width: "800px" }}>{props.description}</p>
+            <p>{props.description}</p>
           </div>
-          <div className="field-promotext">
+          <div className={style.field_promotext}>
             {props.imageUrl && (
               <img alt="" width="300" height="300" src={props.imageUrl} />
             )}
