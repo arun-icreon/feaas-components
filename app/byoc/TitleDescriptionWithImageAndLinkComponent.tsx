@@ -9,9 +9,10 @@ interface TitleDescriptionWithImageAndLinkComponentProps {
   urlText: string;
 }
 
-export const TitleDescriptionWithImageAndLinkComponent = (
+//export const TitleDescriptionWithImageAndLinkComponent =
+export default function TitleDescriptionWithImageAndLinkComponent(
   props: TitleDescriptionWithImageAndLinkComponentProps
-): JSX.Element => {
+) {
   return (
     <div className={`component promo col-12 link_button ${style.link_button}`}>
       <div className="component-content">
@@ -38,7 +39,7 @@ export const TitleDescriptionWithImageAndLinkComponent = (
       </div>
     </div>
   );
-};
+}
 
 FEAAS.External.registerComponent(TitleDescriptionWithImageAndLinkComponent, {
   name: "TitleDescriptionWithImageAndLink",
@@ -46,7 +47,7 @@ FEAAS.External.registerComponent(TitleDescriptionWithImageAndLinkComponent, {
   description: "Title Description With Image and Link Component",
   thumbnail:
     "https://feaasstatic.blob.core.windows.net/assets/thumbnails/byoc.svg",
-  group: "BYOC - External",
+  group: "SUGCON",
   required: ["text", "imageUrl", "url"],
   properties: {
     imageUrl: {
