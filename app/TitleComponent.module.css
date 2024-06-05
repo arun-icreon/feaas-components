@@ -4,6 +4,12 @@
   text-decoration: underline;
   font-family: "Poppins";
 }
+
+.field_para {
+  font-weight: 900;
+  color: #000;
+}
+
 .page section > * {
   position: relative;
   background: #e6e6fa;
