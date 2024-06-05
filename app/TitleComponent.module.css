@@ -5,12 +5,11 @@
   font-family: "Poppins";
 }
 .page section > * {
-  max-width: 300px;
-  background: #eaeaea;
-  margin: 0 10px;
-  padding: 0 10px;
-  width: 300px;
   position: relative;
+  background: #e6e6fa;
+  width: 70%;
+  margin-left: 180px;
+  padding: 20px;
 }
 
 .page section .appRouter {

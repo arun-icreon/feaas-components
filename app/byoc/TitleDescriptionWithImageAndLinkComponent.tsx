@@ -25,7 +25,7 @@ export default function TitleDescriptionWithImageAndLinkComponent(
                 </a>
               </div>
             ) : (
-              <p style={{ fontWeight: 900 }}>{props.text}</p>
+              <p style={{ fontWeight: 900; color:#000 }}>{props.text}</p>
             )}
 
             <p>{props.description}</p>

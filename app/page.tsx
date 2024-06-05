@@ -10,6 +10,8 @@ export default async function ExternalComponents() {
       */}
       <h1>Rendering BYOC components</h1>
       <p>External components can be rendered directly in react tree</p>
+      <br />
+      <br />
       <section>
         <FEAAS.ExternalComponent
           className={style.appRouter}
