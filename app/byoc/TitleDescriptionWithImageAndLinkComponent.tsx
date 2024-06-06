@@ -47,7 +47,7 @@ FEAAS.External.registerComponent(TitleDescriptionWithImageAndLinkComponent, {
   description: "Title Description With Image and Link Component",
   thumbnail:
     "https://feaasstatic.blob.core.windows.net/assets/thumbnails/byoc.svg",
-  group: "SUGCON",
+  group: "SUGCON -External",
   required: ["text", "imageUrl", "url"],
   properties: {
     imageUrl: {
