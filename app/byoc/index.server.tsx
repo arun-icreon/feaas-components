@@ -19,6 +19,3 @@
 
 // Server with Client inside
 import "./TitleDescriptionWithImageAndLinkComponent";
-
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {};

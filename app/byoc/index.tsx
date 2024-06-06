@@ -18,5 +18,3 @@ import ClientsideBundle from "./index.client";
 // Register clientside component bundle
 import dynamic from "next/dynamic";
 FEAAS.enableNextClientsideComponents(dynamic, ClientsideBundle);
-
-export default FEAAS.ExternalComponentBundle;
