@@ -41,7 +41,7 @@ export default function TitleDescriptionWithImageAndLinkComponent(
   );
 }
 
-FEAAS.External.registerComponent(TitleDescriptionWithImageAndLinkComponent, {
+FEAAS.registerComponent(TitleDescriptionWithImageAndLinkComponent, {
   name: "TitleDescriptionWithImageAndLink",
   title: "Title Description With Image and Link Component",
   description: "Title Description With Image and Link Component",
