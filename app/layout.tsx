@@ -1,5 +1,5 @@
 import * as FEAAS from "@sitecore-feaas/clientside/react";
-import "./byoc";
+import "./TitleDescriptionWithImageAndLinkComponent";
 
 export default function RootLayout({
   children,
@@ -13,6 +13,8 @@ export default function RootLayout({
         {/*
         Important to include this on the page (preferrably in layout) so
         clientside bundle is properly prepared by Next.
+         <FEAAS.ExternalComponentBundle />
+        
       */}
         <FEAAS.ExternalComponentBundle />
         {children}
