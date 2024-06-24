@@ -1,7 +1,6 @@
 import React from "react";
 import * as FEAAS from "@sitecore-feaas/clientside/react";
 
-
 import style from "../TitleComponent.module.css";
 interface TitleDescriptionWithImageAndLinkComponentProps {
   imageUrl: string;
@@ -43,7 +42,7 @@ export default function TitleDescriptionWithImageAndLinkComponent(
   );
 }
 
-FEAAS.registerComponent(TitleDescriptionWithImageAndLinkComponent, {
+FEAAS.External.registerComponent(TitleDescriptionWithImageAndLinkComponent, {
   name: "TitleDescriptionWithImageAndLink",
   title: "Title Description With Image and Link Component",
   description: "Title Description With Image and Link Component",
