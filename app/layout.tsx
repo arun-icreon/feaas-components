@@ -1,5 +1,5 @@
 import * as FEAAS from "@sitecore-feaas/clientside/react";
-import "./TitleDescriptionWithImageAndLinkComponent";
+import "../app/byoc/TitleDescriptionWithImageAndLinkComponent";
 
 export default function RootLayout({
   children,
